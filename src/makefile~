@@ -8,5 +8,5 @@ lex.yy.c: diagcc.l
 	flex -w diagcc.l
 
 
-
+install:
 	
