@@ -1,0 +1,8 @@
+test.c:10:1: error: unknown type name ‘iint’
+ iint main() {     
+ ^
+test.c: In function ‘main’:
+test.c:11:13: error: ‘b’ undeclared (first use in this function)
+     int a = b;
+             ^
+

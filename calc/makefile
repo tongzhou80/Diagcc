@@ -1,0 +1,9 @@
+cexpr: y.tab.c lex.yy.c
+	gcc -g -std=c99 -o calc y.tab.c lex.yy.c -lfl
+
+y.tab.c: calc.y
+	yacc -d calc.y
+
+lex.yy.c: calc.l
+	lex calc.l
+

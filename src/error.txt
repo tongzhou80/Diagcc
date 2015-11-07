@@ -1,0 +1,17 @@
+test.c:10:1: error: unknown type name ‘iint’
+ iint main() {     
+ ^
+test.c: In function ‘main’:
+test.c:11:13: error: ‘b’ undeclared (first use in this function)
+     int a = b;
+             ^
+test.c:11:13: note: each undeclared identifier is reported only once for each function it appears in
+test.c:13:5: warning: dereferencing ‘void *’ pointer
+     *c = a;
+     ^
+test.c:13:5: error: invalid use of void expression
+test.c: At top level:
+test.c:14:2: error: expected identifier or ‘(’ before ‘}’ token
+ }}
+  ^
+
