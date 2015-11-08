@@ -4,13 +4,9 @@ Diagcc is a tool that colors gcc's diagnostic message.
 
 # Example
 
-Make 
-
-    $ make
-    
-
 Redirect gcc's stderr to stdout then pipe to ./diagcc (only stdout can be piped)
 
+	$ cd bin
     $ gcc 2>&1 sample.c | ./diagcc
 
 You will get something like this
@@ -25,7 +21,7 @@ Diagcc uses the same color scheme as fdiagnostics-color.
 
 ## Implementation
 
-Diagcc is implemented with flex and bison. 
+Diagcc is implemented with flex and bison. If you want to rebuild the program, flex and bison are required.
 
 The language of the diagnostic message can be defined using by following BNF:
 
