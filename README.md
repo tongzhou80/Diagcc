@@ -51,6 +51,8 @@ Then restart the shell, chdir to src/ and test
     
     gcc sample.c
 
+I don't suggest you install it, since other kinds of error messages are not defined in yacc file's syntax, such as errors like "gcc: error: right_sample.c: No such file or directory". Under such circumstance, the syntatic analyzer will not be able to recognize it. Maybe I'll make the syntax more complete in the future.
+
 
 # Extension
 
