@@ -20,6 +20,7 @@ void color(char* file, int e_t, char* msg);
 
 text            : error_block               {;}
                 | text error_block          {;}
+				|					{;}
                 ;
 
 error_block     : file_name error_type messages    {color($1, $2, $3);}
