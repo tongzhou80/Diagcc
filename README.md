@@ -6,8 +6,10 @@ Diagcc is a tool that colors gcc's diagnostic message.
 
 Redirect gcc's stderr to stdout then pipe to ./diagcc (only stdout can be piped)
 
-	$ cd bin
-    $ gcc 2>&1 sample.c | ./diagcc
+```bash
+$ cd bin
+$ gcc 2>&1 sample.c | ./diagcc
+```
 
 You will get something like this
 
